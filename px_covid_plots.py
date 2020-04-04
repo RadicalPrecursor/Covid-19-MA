@@ -2,7 +2,7 @@ import plotly.express as px
 import pandas as pd
 import plotly.graph_objects as go
 
-df = pd.read_csv('https://raw.githubusercontent.com/RadicalPrecursor/RadicalPrecursor.github.io/master/by_location.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/RadicalPrecursor/Covid-19-MA/master/by_location.csv')
 
 fig = go.Figure()
 fig.add_trace(go.Scatter(x=df['Day'], y=df['Suffolk'], 
